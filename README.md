@@ -100,6 +100,7 @@ Open terminal and type npm start to start the website.
 - Node.js
 - Express
 - MongoDB
+- ReactJS(for FrontEnd)
 
 ## License
 
