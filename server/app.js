@@ -12,6 +12,7 @@ const port = 8005;
 
 app.get("/getAllUser", async (req, res) => {
   try {
+    res.setHeader("Access-Control-Allow-Credentials","true");
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
 
@@ -36,6 +37,7 @@ app.get("/getAllUser", async (req, res) => {
 
 app.get('/getTopUsers',async(req,res)=>{
     try {
+        res.setHeader("Access-Control-Allow-Credentials","true");
         const allUser=await User.find({});
         res.send({status:'ok',data:allUser});
     } catch (e) {
