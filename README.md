@@ -1,6 +1,28 @@
-# User Management API
+# Table Data API
 
-This is a Node.js API built using the Express framework for managing users. It includes endpoints for retrieving a list of all users and retrieving the top users.
+## Overview
+This is a Node.js API built using the Express framework for managing users. 
+It includes endpoints for retrieving a list of all users and retrieving the top users.
+The API provides data for a table that is seeded into the database during setup. 
+The table data is then utilized on the frontend with pagination functionality, ensuring faster loading and improved user experience.
+
+https://github.com/kundu-baivab/API_datafetch/assets/106022593/c39a0b80-fbc8-4b7e-a246-c3e47bf2d6e5
+
+
+
+
+
+## Features
+* Seeded table data stored in MongoDB for quick access.
+* API endpoints to fetch paginated table data.
+* Customizable pagination options to adjust the number of records per page.
+* Secure authentication for restricted access to sensitive data.
+* Easy-to-use API with comprehensive documentation for frontend integration.
+
+## Tech Stack
+* Frontend: React.js with Axios for API data retrieval and pagination.
+* Backend: Node.js with Express.js for building RESTful API endpoints.
+* Database: MongoDB for storing the table data.
 
 ## Getting Started
 
@@ -17,10 +39,6 @@ To start the server, run the following command:
 ```
 npm start
 ```
-
-The server will then be running on `http://localhost:8005`.
-
-## Endpoints
 
 ### GET /getAllUser
 
@@ -101,8 +119,3 @@ Open terminal and type npm start to start the website.
 - Express
 - MongoDB
 - ReactJS(for FrontEnd)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-```
